@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>accountmgmt</groupId>
+  <artifactId>account-management</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- Spring Boot Parent will manage dependency versions automatically -->
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.18</version>
+        <relativePath/> 
+  </parent>
+
+  
+  <!-- defines the output package*/ -->
+  <packaging>jar</packaging>
+  <name>account-management</name>
+
+  <properties>
+        <java.version>1.8</java.version>
+        <spring.boot.version>2.7.18</spring.boot.version>
+  </properties>
+
+	<!-- External libraries -->
+  <dependencies>
+
+        <!-- Spring Boot Web Starter (REST API + Tomcat) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- for reading CSV files -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.7.1</version>
+        </dependency>
+
+        <!-- for Tester -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+   </dependencies>
+   
+   <build>
+     <plugins>
+        <!-- for running app with plugin,not manually -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+     </plugins>
+    </build>
+
+   
+</project>
+

@@ -1,0 +1,6 @@
+accountmgmt\controller\ApiController.class
+accountmgmt\model\Account.class
+accountmgmt\model\Transaction.class
+accountmgmt\model\Beneficiary.class
+accountmgmt\repository\Memory.class
+accountmgmt\AccountManagementApplication.class
