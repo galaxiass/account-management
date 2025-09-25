@@ -18,7 +18,7 @@ Account Management REST API
 
 🚀 Εκτέλεση
 
-1. Βεβαιώσου ότι τα αρχεία CSV είναι στον φάκελο src/main/resources/files/
+1. Τα αρχεία CSV είναι στον φάκελο src/main/resources/files/
 2. Τρέξε την εφαρμογή:
    
    -Από IDE: Εκτέλεσε το AccountManagementApplication.java
