@@ -27,7 +27,6 @@ REST Endpoints
 Όλα τα endpoints ξεκινούν με /beneficiaries/{id}
 
 GET /beneficiaries/{id}: Επιστρέφει τα στοιχεία του δικαιούχου
-
 GET /beneficiaries/{id}/accounts: Επιστρέφει τους λογαριασμούς του δικαιούχου
 
 GET /beneficiaries/{id}/transactions: Επιστρέφει τις συναλλαγές του δικαιούχου
