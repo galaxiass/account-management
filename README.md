@@ -27,9 +27,13 @@ REST Endpoints
 Όλα τα endpoints ξεκινούν με /beneficiaries/{id}
 
 GET /beneficiaries/{id}: Επιστρέφει τα στοιχεία του δικαιούχου
+
 GET /beneficiaries/{id}/accounts: Επιστρέφει τους λογαριασμούς του δικαιούχου
+
 GET /beneficiaries/{id}/transactions: Επιστρέφει τις συναλλαγές του δικαιούχου
+
 GET /beneficiaries/{id}/balance: Επιστρέφει το συνολικό υπόλοιπο του δικαιούχου
+
 GET /beneficiaries/{id}/max-withdrawal: Επιστρέφει τη μεγαλύτερη ανάληψη του τελευταίου μήνα
 
 Δομή CSV
@@ -46,8 +50,12 @@ transactions.csv: transactionId,accountId,amount,type,date (date format: MM/dd/y
 
 Παράδειγμα χρήσης 
 
-curl http://localhost:8088/beneficiaries/1
-curl http://localhost:8088/beneficiaries/1/accounts
-curl http://localhost:8088/beneficiaries/1/transactions
-curl http://localhost:8088/beneficiaries/1/balance
-curl http://localhost:8088/beneficiaries/1/max-withdrawal
+http://localhost:8088/beneficiaries/1
+
+http://localhost:8088/beneficiaries/1/accounts
+
+http://localhost:8088/beneficiaries/1/transactions
+
+http://localhost:8088/beneficiaries/1/balance
+
+ http://localhost:8088/beneficiaries/1/max-withdrawal
